@@ -10,7 +10,7 @@ body p {
 }
 
 .header h1 {
-    background: #ce2c38;
+    background: #2b65c4;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     height: 140px;
@@ -24,7 +24,7 @@ body p {
 .header h1 span {
     color:#fff;
     display: block;
-    font-size: 40px;
+    font-size: 28px;
     padding: 34px 0 0 0;
 }
 
