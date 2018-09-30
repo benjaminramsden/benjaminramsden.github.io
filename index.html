@@ -1,63 +1,21 @@
-<!doctype html>
-<html>
-  <head>
-    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet" />
-    <script src="js/vendor/angular.min.js"></script>
-  </head>
-  <body ng-app="CvApp">
-    <div class="header">
-      <h1><span>Benjamin</span><span>Ramsden</span></h1>
-    </div>
-
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-        <h1>Specials for {{ today | date }}</h1>
-        
-        <h2>Appetizers</h2>
-        <div class="appetizers row" ng-repeat="app in appetizers">
-          <div class="item col-md-9">
-            <h3 class="name">{{ app.name }} </h3>
-            <p class="description"> {{ app.description }}</p>
-          </div>
-          <div class="price col-md-3">
-            <p class="price">{{ app.price | currency }}</p>
-          </div>
-        </div>
-        
-        <h2>Mains</h2>
-        <div class="mains row" ng-repeat="main in mains">
-          <div class="item col-md-9">
-            <h3 class="name">{{ main.name }} </h3>
-            <p class="description"> {{ main.description }}</p>
-          </div>
-          <div class="price col-md-3">
-            <p class="price">{{ main.price | currency }}</p>
-          </div>
-        </div>
-        
-        <h2>Extras</h2>
-        <div class="extras row" ng-repeat="extra in extras">
-          <div class="item col-md-9">
-            <h3 class="name">{{ extra.name }} </h3>
-            <p class="description"> {{ extra.description }}</p>
-          </div>
-          <div class="price col-md-3">
-            <p class="price">{{ extra.price | currency }}</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer">
-    </div>
-    
-    <!-- Modules -->
-    <script src="js/app.js"></script>
-
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My blog - Ben Ramsden</title><meta name="robots" content="index, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://benjaminramsden.github.io/"><link rel="amphtml" href="https://benjaminramsden.github.io/amp/"><link type="application/atom+xml" rel="alternate" href="https://benjaminramsden.github.io/feed.xml"><meta property="og:title" content="Ben Ramsden"><meta property="og:site_name" content="My blog - Ben Ramsden"><meta property="og:description" content=""><meta property="og:url" content="https://benjaminramsden.github.io/"><meta property="og:type" content="article"><link rel="stylesheet" href="https://benjaminramsden.github.io/assets/css/style.css?v=3d0ffa156ec071ea80a3762b1879bad3"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Ben Ramsden","url":"https://benjaminramsden.github.io"}</script><script async src="https://benjaminramsden.github.io/assets/js/lazysizes.min.js?v=3150bf538edc0788afd7c673a0c5dfee"></script><style>@media all and (min-width: 37.5em) {
+			    .card--featured:before {
+				    content: "Featured"
+			    }
+			}</style></head><body><div class="container"><header class="js-top"><a class="logo" href="https://benjaminramsden.github.io">Ben Ramsden </a><button class="search-btn" aria-label="Search"><svg role="presentation" focusable="false"><use xlink:href="https://benjaminramsden.github.io/assets/svg/svg-map.svg#search"/></svg></button><nav class="navbar js-navbar"><button class="navbar__toggle js-navbar__toggle" aria-expanded="false">Menu</button><ul class="navbar__menu"></ul></nav></header><main></main><footer class="footer"><div class="footer__newsletter newsletter"><p class="newsletter__note">Get the latest QF news, updates and more delivered<br>directly to your email inbox</p><form>...</form></div><a class="logo" href="https://benjaminramsden.github.io">Ben Ramsden</a><nav class="footer__nav"><ul></ul></nav><div class="footer__copyright">Powered by Publii</div></footer></div><div class="search"><div class="search__overlay"><button class="search__close" aria-label="Close">Close</button><form action="https://benjaminramsden.github.io/search.html"><input class="search__input" type="search" name="q" placeholder="search..." autofocus="autofocus"></form></div></div><script>var loadCSSFiles = function() {
+            var links = ['https://fonts.googleapis.com/css?family=Arimo:400,700|Playfair+Display:400&amp;subset=latin-ext'],
+                headElement = document.getElementsByTagName('head')[0],
+                linkElement, i;
+            for (i = 0; i < links.length; i++) {
+                linkElement = document.createElement('link');
+                linkElement.rel = 'stylesheet';
+                linkElement.href = links[i];
+                headElement.appendChild(linkElement);
+            }
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) {
+            raf(loadCSSFiles);
+        } else {
+            window.addEventListener('load', loadCSSFiles);
+        }</script><script defer="defer" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script><script defer="defer" src="https://benjaminramsden.github.io/assets/js/scripts.min.js?v=aedd7cd4cb2e1aa8d0b99441ecacaf4b"></script></body></html>
